@@ -3,7 +3,7 @@
 ## Description
 Command line application for creating an employee summary using **JavaScript Classes/Subclasses**,   
 **Node.js**, **Inquirer**, and **Jest** Test Driven Development. The CLI will prompt the user and  
-render the response to templated HTML. See attached video example.    
+render the response to templated HTML. See attached video example: https://youtu.be/fHQHjNKb_z8.      
 
 *Initialize the application with the code below, with prompts for user input for each section.
 
@@ -32,10 +32,11 @@ SO that I have quick access to emails and GitHub profiles
 ![Example CLI Interface.jpg](./example_CLI.JPG)
 
 ## Latest Commit  
--Updated README.md  
--Added screenshots and video demo  
+-Replaced mp4 with link to youtube demo  
 
 ## Previous Commits  
+-Updated README.md  
+-Added screenshots and video demo  
 -Added inquirer validate functions to check name is non-empty string and ID is non-empty integer  
 -Added CSS to templates to style employee cards  
 -Added Inquirer Prompts  
