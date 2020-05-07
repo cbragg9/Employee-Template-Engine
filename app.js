@@ -11,17 +11,38 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./lib/htmlRenderer");
 
 let employeeArray = [];
+let regexStrings = new RegExp("^[a-zA-Z ]*$");
+let regexNumbers = new RegExp("^[0-9 ]*$");
 
+// Inquirer prompts array, validate name returns a non empty string of regex letters, and ID returns a non empty regex integer
 const questions = [
     {
         type: "input",
         message: "What is the employee's NAME?",
-        name: "EmployeeName"
+        name: "EmployeeName",
+        validate: function checkString(name) {
+            if (name == "") {
+                return "Input required";
+            } else if (regexStrings.test(name)) {
+                return true;
+            } else {
+                return "Expected Input type: letters";
+            }
+        },
     },
     {
         type: "input",
         message: "What is the employee's ID?",
-        name: "EmployeeID"
+        name: "EmployeeID",
+        validate: function checkNumbers(name) {
+            if (name == "") {
+                return "Input required";
+            } else if (regexNumbers.test(name)) {
+                return true;
+            } else {
+                return "Expected Input type: numbers";
+            }
+        },
     },
     {
         type: "input",
@@ -100,6 +121,3 @@ function handleInquirerPrompts(response) {
         });
     }
 }
-
-// TO DO:
-// * Use validation to ensure that the information provided is in the proper expected format.

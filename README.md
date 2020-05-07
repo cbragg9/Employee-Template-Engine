@@ -3,9 +3,10 @@ Command line application for creating an employee summary using JavaScript, Node
 
 
 ## Latest Commit  
--Added CSS to templates to style employee cards  
+-Added inquirer validate functions to check name is non-empty string and ID is non-empty integer  
 
 ## Previous Commits  
+-Added CSS to templates to style employee cards  
 -Added Inquirer Prompts  
 -Created function to handle response  
 -Created new employee instance conditional on response  
