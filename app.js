@@ -103,4 +103,3 @@ function handleInquirerPrompts(response) {
 
 // TO DO:
 // * Use validation to ensure that the information provided is in the proper expected format.
-// * Add CSS to html templates
