@@ -32,9 +32,10 @@ SO that I have quick access to emails and GitHub profiles
 ![Example CLI Interface.jpg](./example_CLI.JPG)
 
 ## Latest Commit  
--Replaced mp4 with link to youtube demo  
+-Add .gitignore  
 
 ## Previous Commits  
+-Replaced mp4 with link to youtube demo  
 -Updated README.md  
 -Added screenshots and video demo  
 -Added inquirer validate functions to check name is non-empty string and ID is non-empty integer  
